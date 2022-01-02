@@ -17,7 +17,7 @@ hbs.registerPartials(partialsTemp)
 app.use(express.static(publicDirPath))
 app.get('/',(req,res)=>{
   console.log("Home");
-  res.send("<h1>Home</h1>")
+  res.send("<h1>Home page</h1>")
 })
 
 app.get('/login',(req,res)=>{
@@ -35,6 +35,6 @@ app.get('/createAccount', (req,res)=>{
     })
 })
 
-app.listen(3030,()=>{
+app.listen(3090,()=>{
     console.log("Server 3030 is started execution on web server")
 })
