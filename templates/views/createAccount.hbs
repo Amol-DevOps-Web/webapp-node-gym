@@ -33,7 +33,7 @@
 
         <!-- Registeration Form -->
         <div class="col-md-7 col-lg-6 ml-auto">
-            <form action="">
+            <form action="/insertData" method="POST">
                 <div class="row">
 
                     <!-- First Name -->
@@ -121,9 +121,9 @@
 
                     <!-- Submit Button -->
                     <div class="form-group col-lg-12 mx-auto mb-0">
-                        <a href="#" class="btn btn-primary btn-block py-2">
+                        <button value="submit" onclick="myFunction()"  class="btn btn-primary btn-block py-2">
                             <span class="font-weight-bold">Create your account</span>
-                        </a>
+                        </button>
                     </div>
 
                     <!-- Divider Text -->
@@ -145,6 +145,12 @@
         </div>
     </div>
 </div>
+<script>
+   function myFunction() {
+  alert("We are creating account");
+}
 
-    </body>
+</script>
+
+</body>
 </html>
